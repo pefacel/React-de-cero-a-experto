@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ReactApp</title>
+    <!-- Cargat React -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+
+
+<div id="root"></div>
+
+    <script type="text/babel">
+
+        const divRoot = document.querySelector('#root');
+
+        const nombre = 'RicFlair';
+
+        const sumaJS = `1+1 en JS = ${1+1}`;
+
+        const sumaModernJS = "1+1 en MJS = " + (1+1);
+
+        const h1Tag = <h1>Hola, soy {sumaModernJS}</h1>
+
+        ReactDOM.render(h1Tag, divRoot);
+
+    </script>
+
+
+</body>
+
+</html>
